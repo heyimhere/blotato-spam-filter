@@ -17,7 +17,7 @@ A high-performance, TypeScript-based spam detection service for Twitter-like soc
 - **Automatic optimization recommendations**
 
 ### **Production Ready**
-- **Complete REST API** with OpenAPI documentation
+- **Complete REST API** with comprehensive documentation
 - **Security middleware** (CORS, Helmet, rate limiting)
 - **Input validation** with Zod schemas
 - **Health checks** and monitoring endpoints
