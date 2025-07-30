@@ -99,7 +99,7 @@ npm run demo
 
 ### Single Post Analysis
 ```bash
-curl -X POST http://localhost:3001/api/analyze \
+curl -X POST http://localhost:3000/api/analyze \
   -H "Content-Type: application/json" \
   -d '{
     "content": "Get rich quick! Click here now!!!",
@@ -130,7 +130,7 @@ curl -X POST http://localhost:3001/api/analyze \
 
 ### Batch Analysis
 ```bash
-curl -X POST http://localhost:3001/api/analyze/batch \
+curl -X POST http://localhost:3000/api/analyze/batch \
   -H "Content-Type: application/json" \
   -d '{
     "posts": [
