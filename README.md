@@ -1,43 +1,43 @@
-# 🍟 Blotato Spam Filter
+# Blotato Spam Filter
 
 A high-performance, TypeScript-based spam detection service for Twitter-like social media platforms. Built with advanced content analysis, edge case handling, and comprehensive API endpoints.
 
-## 🚀 Key Features
+## Key Features
 
-### 🔍 **Advanced Spam Detection**
+### **Advanced Spam Detection**
 - **6 Detection Rules** running in parallel
 - **Sub-millisecond processing** (average 0.39ms)
 - **Deep content analysis** with character, word, and sentence patterns
 - **Edge case handling** for obfuscation, encoding issues, and Unicode variants
 
-### ⚡ **High Performance**
+### **High Performance**
 - **In-memory caching** with 30x+ speedup
 - **Batch processing** support
 - **Performance monitoring** with P95/P99 metrics
 - **Automatic optimization recommendations**
 
-### 🛡️ **Production Ready**
+### **Production Ready**
 - **Complete REST API** with OpenAPI documentation
 - **Security middleware** (CORS, Helmet, rate limiting)
 - **Input validation** with Zod schemas
 - **Health checks** and monitoring endpoints
 
-### 🔷 **Strong TypeScript Foundation**
+### **Strong TypeScript Foundation**
 - **Strict TypeScript** configuration
 - **Comprehensive type safety** throughout
 - **Layered architecture** with clear separation of concerns
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 | Metric | Value | Target |
 |--------|-------|--------|
-| Average Processing Time | 0.39ms | <50ms ✅ |
-| P95 Processing Time | 1.17ms | <100ms ✅ |
-| Cache Hit Speedup | 30-43x | >10x ✅ |
-| Memory Usage | 16.6MB | <100MB ✅ |
-| Detection Rules | 6 active | 6+ ✅ |
+| Average Processing Time | 0.39ms | <50ms |
+| P95 Processing Time | 1.17ms | <100ms |
+| Cache Hit Speedup | 30-43x | >10x |
+| Memory Usage | 16.6MB | <100MB |
+| Detection Rules | 6 active | 6+ |
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 src/
@@ -55,7 +55,7 @@ src/
 └── utils/            # Helper utilities
 ```
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 ```bash
 # Clone the repository
@@ -78,7 +78,7 @@ npm run dev
 npm run demo
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### **Analysis Endpoints**
 - `POST /api/analyze` - Analyze single post
@@ -95,7 +95,7 @@ npm run demo
 - `POST /api/cache/clear` - Clear detection cache
 - `POST /api/cache/cleanup` - Remove expired entries
 
-## 💡 Usage Examples
+## Usage Examples
 
 ### Single Post Analysis
 ```bash
@@ -140,7 +140,7 @@ curl -X POST http://localhost:3000/api/analyze/batch \
   }'
 ```
 
-## 🎯 Detection Rules
+## Detection Rules
 
 | Rule | Weight | Purpose |
 |------|--------|---------|
@@ -151,7 +151,7 @@ curl -X POST http://localhost:3000/api/analyze/batch \
 | **Repetitive Content** | 0.20 | Finds spam patterns |
 | **Caps Abuse** | 0.15 | Detects excessive capitalization |
 
-## 🔬 Edge Case Handling
+## Edge Case Handling
 
 - **Unicode normalization** and encoding fixes
 - **Obfuscation detection** (l33t speak, zero-width chars)
@@ -160,7 +160,7 @@ curl -X POST http://localhost:3000/api/analyze/batch \
 - **Special character** pattern analysis
 - **Contextual validation** (URLs, mentions, hashtags)
 
-## 🧪 Testing
+## Testing
 
 The project includes comprehensive test suites:
 
@@ -176,14 +176,14 @@ npm run demo
 ```
 
 **Test Categories:**
-- ✅ Legitimate content recognition
-- ✅ Spam content detection
-- ✅ Abusive content filtering
-- ✅ Edge case handling
-- ✅ Performance benchmarking
-- ✅ API endpoint validation
+- Legitimate content recognition
+- Spam content detection
+- Abusive content filtering
+- Edge case handling
+- Performance benchmarking
+- API endpoint validation
 
-## 📈 Monitoring & Health
+## Monitoring & Health
 
 The service provides detailed monitoring:
 
@@ -195,7 +195,7 @@ The service provides detailed monitoring:
 
 Access via `/health/detailed` endpoint for complete system status.
 
-## 🛠️ Configuration
+## Configuration
 
 Key configuration options in `src/config/detection.ts`:
 
@@ -208,7 +208,7 @@ export const DETECTION_THRESHOLDS = {
 };
 ```
 
-## 🚀 Deployment
+## Deployment
 
 **Supported Platforms:**
 - Railway, Render, Fly.io
@@ -223,7 +223,7 @@ NODE_ENV=production
 # Add database config when implemented
 ```
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] SQLite persistence integration
 - [ ] Machine learning model integration
@@ -232,11 +232,11 @@ NODE_ENV=production
 - [ ] Admin dashboard UI
 - [ ] A/B testing framework
 
-## 📄 License
+## License
 
 MIT License - feel free to use in your projects!
 
 
 ---
 
-**Built with ❤️ using TypeScript, Express, and modern Node.js practices.** 
+**Built with TypeScript, Express, and modern Node.js practices.** 
